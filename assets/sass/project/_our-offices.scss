@@ -1,0 +1,348 @@
+#our-offices {
+  // background-color: #e5e4d8;
+  height: 100vh;
+  display: table;
+  width: 100%;
+  position: relative;
+  background-color: $color-grey-projects;
+  padding: 10px;
+
+  .desktop {
+    display: table-cell;
+    vertical-align: middle;
+    // background-color: #0f193c;
+
+    img.map-animation {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .our-offices-title {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      border-bottom: 3px solid $color-navy;
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #our-offices {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 573px) {
+  #our-offices {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+// @media screen and (max-width: 767px) {
+//   #our-offices .desktop {
+//     display: none;
+//   }
+// }
+
+@media screen and (max-width: 1024px) {
+  #our-offices .desktop .our-offices-title {
+    position: inherit;
+    text-align: center;
+    border-bottom: 0 solid $color-navy;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #our-offices .desktop {
+    display: none;
+
+    .our-offices-title {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #our-offices .mobile {
+    display: block;
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+
+    .our-offices-title {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+        padding: 0 10px;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: $color-orange;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
+
+.our-offices-inner {
+  position: relative;
+  width: 1103px;
+  height: 600px;
+  display: table-cell;
+  vertical-align: middle;
+
+  h3 {
+    color: $color-navy;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .our-offices-inner h3 {
+    font-size: 18px;
+  }
+}
+
+hr.blue-line {
+  width: 200px;
+  border-top: 2px solid $color-blue;
+}
+
+.svg-wrap {
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+video#map {
+  width: 80%;
+  height: 100%;
+  z-index: -1000;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+  .page-template-default .site-header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background: $color-navy;
+    height: 90px;
+  }
+}
+
+.page-template-default .container {
+  padding-top: 200px;
+}
+
+@media screen and (max-width: 992px) {
+  .page-template-default .container {
+    padding-top: 100px;
+  }
+}
+
+.mobile-break, .tablet-break {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-break {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tablet-break {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .tablet-break {
+    display: none;
+  }
+}
+
+.desktop-break {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .desktop-break {
+    display: none;
+  }
+}
+
+.pulsating-circle {
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  width: 30px;
+  height: 30px;
+
+  &:before {
+    content: "";
+    position: relative;
+    display: block;
+    width: 300%;
+    height: 300%;
+    box-sizing: border-box;
+    margin-left: -100%;
+    margin-top: -100%;
+    border-radius: 45px;
+    background-color: #0300ff;
+    -webkit-animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #0300ff;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -webkit-animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+    animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite;
+  }
+}
+
+@-webkit-keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+  }
+
+  100%, 80% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33);
+  }
+
+  100%, 80% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse-dot {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.punkt_losangeles {
+  left: 23.4%;
+  top: 42.3%;
+}
+
+.punkt_dallas {
+  left: 27.3%;
+  top: 48.5%;
+}
+
+.punkt_durham {
+  left: 31.9%;
+  top: 45.4%;
+}
+
+.punkt_newyork {
+  left: 33.8%;
+  top: 41.4%;
+}
+
+.punkt_santiago {
+  left: 33.6%;
+  top: 76.3%;
+}
+
+.punkt_london {
+  left: 48.5%;
+  top: 36.2%;
+}
+
+.punkt_bucharest {
+  left: 51.8%;
+  top: 38%;
+}
+
+.punkt_seoul {
+  left: 76.8%;
+  top: 44%;
+}
+
+.punkt_auckland { 
+  left: 86%;
+  top: 79.3%; 
+}
+
+.map {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 1300px;
+  z-index: 1;
+
+  @media screen and (max-width: 1440px) {
+    width: 1130px;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 480px) {
+    margin-top: 30px;
+  }
+
+  img {
+    display: block;
+  }
+}
+
+
+

@@ -1,0 +1,103 @@
+.site-footer {
+    background: #e6e4d9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 20px;
+    color: #000;;
+  
+    .logo {
+        margin-bottom: 30px;
+        width: 130px;
+    }
+
+    ul {
+        margin: 0;
+        list-style: none;
+        padding-left: 0;
+        li {
+            padding-right: 10px;
+            font-size: 14px;
+            color: $color-navy;
+            display: inline-block;
+            border-right: 1px solid $color-navy;
+            &:last-child {
+                border-right: 0px solid $color-navy;
+            }
+            @media screen and (max-width: 992px) {
+                padding-bottom: 15px;
+                border-right: 0px solid $color-navy;
+                display: block;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        color: $color-white;
+        text-decoration: none;
+        font-size: 14px;
+        color: #09163e;
+        cursor: pointer;
+        img {
+            width: 35px;
+            margin-top: -3px;
+            margin-right: 5px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .fa {
+        display: none;
+    }
+}
+//     .footer-menu, .menu-social-footer {
+//         // display: flex;
+//         list-style-type: none;
+//         color: $color-white;
+//         justify-content: space-around;
+//         li {
+//             margin-bottom: 30px;
+//         }
+
+//         @media (max-width: 768px) {
+//             margin-top: 30px;
+//             padding-left: 0;
+
+//             li {
+//                 margin-bottom: 15px;
+//             }
+//         }
+
+//         a {
+//             text-decoration: none;
+//             color: $color-white;
+//             transition: 0.3s;
+//             opacity: 0.56;
+//             cursor: pointer;
+//         }
+
+//         a:hover {
+//             color: $color-white !important;
+//             cursor: pointer;
+//         }
+
+
+//         a:visited {
+//             text-decoration: none;
+//             color: $color-white;
+//         }
+//     }
+
+//     .menu-social {
+//         justify-content: space-evenly;
+//     }
+// }
+
+#colophon.site-footer .container {
+    max-width: 90vw !important;
+}

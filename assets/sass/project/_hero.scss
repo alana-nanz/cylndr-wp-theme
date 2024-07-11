@@ -1,0 +1,371 @@
+body {
+    font-family: 'Value';
+}
+
+#bgvid,
+#bgvid-mobile,
+#bgvid-tablet,
+#about-us {
+
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%; 
+  min-height: 100%; 
+  // width: auto; 
+  width: 100vh; 
+  height: auto;
+  z-index: -1000; 
+  overflow: hidden;
+  @media screen and (max-width: 1024px) {
+    width: auto;
+  }
+  
+}
+#bgvid {
+  object-fit: cover;
+}
+
+video[poster]{
+  height:100%;
+  width:100%;
+  @media screen and (max-width: 1024px) {
+    height: auto;
+    width: 100%;
+  }
+}
+
+
+
+.video-desktop {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+.video-tablet {
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
+.video-mobile {
+  display: none;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+}
+
+.slider-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 90px;
+    overflow: hidden;
+  }
+  
+  .coming-soon-mobile-img {
+    display: none;
+  }
+  
+  .coming-soon {
+    height: 100vh;
+    display: table;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+  }
+  
+  .header-wrap {
+    width: 1020px;
+    position: relative;
+    display: table;
+    // height: 180px;
+    margin: 0 auto;
+  }
+  
+  .hover-text,
+  .hover-header {
+    position: absolute;
+    left: 0;
+    display: table-cell;
+    transition: 0s linear;
+    cursor: default;
+    &:hover {
+      transition: 0s linear;
+    }
+  }
+
+  .hover-text:hover {
+    // opacity: 0;
+    position: relative;
+    color: transparent;
+    letter-spacing: 15px;
+    
+  }
+  // .hover-text:hover:after {
+  //   content: 'creative';
+  //   position: absolute;
+  //   left: 0;
+  //   letter-spacing: 15px;
+  //   color: $color-blue;
+  //   @media only screen and (max-width: 1024px) {
+  //     content: '';
+  //     position: static;
+  //     left: 0;
+  //   }
+  // }
+  .hover-text {
+    span {
+      @media (max-width:1024px){
+        letter-spacing:3px;
+        &.first-element {
+          letter-spacing:12px;
+        }
+      }
+    }
+  }
+  
+  
+  .hover-text-right {
+    position: absolute;
+    right: 0;
+    display: table-cell;
+    cursor: default;
+    transition: 0s linear;
+    &:hover {
+      color: $color-blue;
+      transition: 0s linear;
+    }
+  }
+  
+ 
+  
+  ul.list-group.list-group-horizontal {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 30px;    
+  }
+  
+  ul.list-group.list-group-horizontal li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    color: #09163e;
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+  }
+  
+  .footer svg {
+    width: 40px;
+    margin-top: -5px;
+  }
+
+  a.btn-email   {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+
+  }
+  
+  .say-hello {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    right: -40px;
+    color: $color-blue;
+    font-size: 20px;
+  }
+
+  @-webkit-keyframes mymove {
+    from {
+      right: 0px;
+    }
+    to {
+      right: 100%;
+    }
+}
+
+  @keyframes mymove {
+    from {
+      right: 0px;
+    }
+    to {
+      right: 100%;
+    }
+  }
+
+
+  
+  .list-group.list-group-horizontal.list-mobile {
+    display: none;
+  }
+  
+  
+  @media only screen and (max-width: 1180px) {
+    
+    .coming-soon h1 {
+      font-family: 'Value';
+      font-weight: bold;
+      font-size: 4rem;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .header-wrap {
+      width: auto;
+      position: static;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1.hover-text,
+    h1.hover-header {
+      position: static;
+      left: 0;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0;
+      transition: .35s ease-in-out;
+      font-size: 5rem;
+    }
+
+    .hover-text:hover,
+    .hover-header:hover {
+      letter-spacing: 1px;
+      transition: .35s ease-in-out;
+    }
+
+    h1.hover-text-right {
+      position: static;
+      right: 0;
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0px;
+      // transition: .35s ease-in-out;
+      &:hover {
+        transition: .35s ease-in-out;
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 15px;
+      right: 50%;
+      margin-right: -90px;
+    }
+    
+    .list-group.list-group-horizontal.list-mobile {
+      display: block;
+    }
+
+    .list-group.list-group-horizontal.list-desktop {
+      display: none;
+    }
+
+    .coming-soon-mobile-img {
+      display: block;
+      width: 100px;
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    .coming-soon {
+      height: 100vh;
+      display: table;
+      width: 100%;
+      cursor: initial;
+      overflow: hidden;
+
+      video {
+        height:100%;
+        width:100%;
+        @media screen and (max-width: 1024px) {
+          height: auto !important;
+          width: 100% !important;
+        }
+      }
+    }
+
+  }
+  
+  .coming-soon h1 {
+    font-family: 'Value';
+    font-weight: bold;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 0;
+    }
+  }
+  
+
+  
+  .coming-soon-inner {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    margin-top: -57px;
+    left: 0;
+    width: 100%;
+    display: table;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .coming-soon-inner {
+      margin-top: -85px;
+      @media screen and (max-width: 1024px) {
+        height: 100%;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        top: 0;
+      }
+    }
+   
+    .coming-soon h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    h1.hover-text,
+    h1.hover-header {
+      margin-bottom: 0;
+    }
+
+    .list-group.list-group-horizontal.list-mobile {
+      font-size: 12px;
+    }
+
+  }
+
+.site-header {
+  .company-logo {
+    display:block;
+    .logo {
+      max-height:44px;
+    }
+  }
+
+}

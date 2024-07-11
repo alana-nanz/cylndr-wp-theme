@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Value';
+    src: url('../fonts/Value-Black.eot');
+    src: local('Value Black'), local('Value-Black'),
+        url('../fonts/Value-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Value-Black.woff') format('woff'),
+        url('../fonts/Value-Black.svg') format('svg'),
+        url('../fonts/Value-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Value';
+    src: url('../fonts/Value-BoldItalic.eot');
+    src: local('Value Bold Italic'), local('Value-BoldItalic'),
+        url('../fonts/Value-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Value-BoldItalic.woff') format('woff'),
+        url('../fonts/Value-BoldItalic.svg') format('svg'),
+        url('../fonts/Value-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Value';
+    src: url('../fonts/Value-Medium.eot');
+    src: local('Value Medium'), local('Value-Medium'),
+        url('../fonts/Value-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Value-Medium.woff') format('woff'),
+        url('../fonts/Value-Medium.svg') format('svg'),
+        url('../fonts/Value-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Value';
+    src: url('../fonts/Value-MediumItalic.eot');
+    src: local('Value Medium Italic'), local('Value-MediumItalic'),
+        url('../fonts/Value-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Value-MediumItalic.woff') format('woff'),
+        url('../fonts/Value-MediumItalic.svg') format('svg'),
+        url('../fonts/Value-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Value';
+    src: url('../fonts/Value-Italic.eot');
+    src: local('Value Italic'), local('Value-Italic'),
+        url('../fonts/Value-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Value-Italic.woff') format('woff'),
+        url('../fonts/Value-Italic.svg') format('svg'),
+        url('../fonts/Value-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Value';
+    src: url('../fonts/Value.eot');
+    src: local('Value Regular'), local('Value'),
+        url('../fonts/Value.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Value.woff') format('woff'),
+        url('../fonts/Value.svg') format('svg'),
+        url('../fonts/Value.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Value';
+    src: url('../fonts/Value-Bold.eot');
+    src: local('Value Bold'), local('Value-Bold'),
+        url('../fonts/Value-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Value-Bold.woff') format('woff'),
+        url('../fonts/Value-Bold.svg') format('svg'),
+        url('../fonts/Value-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'Compass Sans Bold';
+    src: url('../fonts/CompassSans-Bold.woff');
+    // src: local('Value Bold'), local('Value-Bold'),
+    //     url('../fonts/Value-Bold.eot?#iefix') format('embedded-opentype'),
+    //     url('../fonts/Value-Bold.woff') format('woff'),
+    //     url('../fonts/Value-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  $color-blue:  #0000fd;
+  $color-black: #000;
+  $color-white: #fff;
+  $color-navy: #0E173E;
+  $color-grey: #E5E5DB;
+  $color-orange: #E17829;
+  $color-black--projects: #09163E;
+  $color-grey-projects: #e5e4d8;
+  
