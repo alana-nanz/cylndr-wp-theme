@@ -36,10 +36,6 @@ get_header();
     <?php get_template_part('template-parts/clients'); ?>
     </section>
 
-    <section id="our-global-family">
-        <?php get_template_part('template-parts/our-global-family'); ?>
-    </section>
-
     <section id="our-services" class="wrapper-services">
         <div id="our-services-inner" class="coming-soon">
             <?php get_template_part('template-parts/our-services'); ?>
@@ -57,7 +53,6 @@ get_header();
 		            <path id="Path_1" data-name="Path 1" d="M-422.612-166.925h8.866L-430-150.67l-16.254-16.255h8.866v-22.209h14.776Z" transform="translate(446.254 189.134)" fill="#af6164"/>
 	            </svg>
             </a>
-
         </div>
     </section>
 
