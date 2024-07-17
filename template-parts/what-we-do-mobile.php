@@ -1,14 +1,9 @@
-<div class="what-we-do-mobile">
+<div class="what-we-do-mobile" style="background: url(<?php echo get_theme_file_uri('/assets/img/services.jpg'); ?>); background-size: cover; background-repeat: no-repeat; background-position: center;">
        
-
-
-  <div class="what-we-do-inner-top">
-      <div class="swiper-inner-wrap">
-          <div class="inner">
-            <?php the_field('orange_header', 'option'); ?>            
-          </div>
-      </div>
-  </div>
+  <div class="what-we-do-top">
+		<h2>OUR <span>SERVICES</span></h2>
+		<div class="sub-head">Not all brands and businesses are built the same. We thrive on offering bespoke services that fit the needs of each client.</div>
+	</div>
 
   <div class="what-we-do-inner-bottom-mobile">
 

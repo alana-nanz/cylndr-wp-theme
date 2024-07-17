@@ -2,19 +2,19 @@
     <div class="office-details">
         <h3>Durham</h3>
         <p>318 Blackwell Street</br>Durham</br> NC 27701</br>USA</p>
-        </br>
+        <!-- </br> -->
         <a class="map-link" href="https://goo.gl/maps/TThB2vmThQ7Z8hUL8" target="_blank"><strong>Map</strong></a>
     </div>
     <div class="office-details-contact">
         <!-- <a class="phone-number" href="tel:+44 020 000 0000">+44 020 000 0000</a>
             </br> -->
-        <a class="email" href="mailto:durham@cylndr.com">durham@cylndr.com</a>
+        <a class="email" href="mailto:hello@cylndr.com">hello@cylndr.com</a>
     </div>
     <div class="office-social-media">
         <ul>
             <li><a href="#">Facebook</a></li>
             <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/cylndr-studios" target="_blank">LinkedIn</a></li>
             <li><a href="#">YouTube</a></li>
         </ul>
     </div>

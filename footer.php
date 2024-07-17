@@ -24,14 +24,10 @@
 
 <footer id="colophon" class="site-footer">
     <div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<!-- Cheil logos -->
+			<!-- <div class="col-xs-12"> -->
 				<?php get_template_part('template-parts/our-global-family'); ?>
-            
         <?php the_field('footer_content', 'option'); ?>
-			</div>
-		</div>
+			<!-- </div> -->
 	</div>
 </footer><!-- #colophon -->
 

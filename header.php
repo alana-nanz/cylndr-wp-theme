@@ -56,7 +56,7 @@
 			}
 			@media screen and (max-width: 1024px) {
 				svg.logo {
-					width: 130px;
+					width: 100px;
 				}
 			}
 
@@ -82,15 +82,11 @@
 				<?php 
 				if (is_front_page() && is_home()) :
 				?>
-					<h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
+					
 				<?php
 				else :
 				?>
-					<p class="site-title">
-						<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
-							<?php bloginfo('name'); ?>
-						</a>
-					</p>
+
 				<?php
 				endif;
 				$mint_dev_description = get_bloginfo('description', 'display');
@@ -102,9 +98,7 @@
 			</div><!-- .site-branding -->
 			<a class="open-button"> 
 				<div class="open-img">
-					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
-						<path id="Path_1" data-name="Path 1" d="M17.5,0A17.5,17.5,0,1,0,35,17.5,17.455,17.455,0,0,0,17.5,0ZM14.9,18.5h-9V16.4h9Zm14.3,0H18.5V29.1H16.4V5.8h2.1V16.4H29.1v2.1Z" fill="#e6e4d9"/>
-					</svg>
+					<img src="<?php echo get_theme_file_uri()?>/assets/img/star-icon.png" alt="cylndr">
 				</div>
 			</a> 
 			
@@ -112,9 +106,10 @@
 			<nav class="main-navigation closed">
 				<?php mint_main_menu(); ?>
 				<div class="mobile-copyright">
-					<a href="/tax-strategy">Tax Strategy</a>
-					<a href="/privacy-policy">Privacy Policy</a>
-					<p>Copyright &copy; <?php echo date('Y'); ?>
+					<!-- <a href="/tax-strategy">Tax Strategy</a>
+					<a href="/privacy-policy">Privacy Policy</a> -->
+					<p>Copyright &copy; <?php echo date('Y'); ?> CYLNDR</p>
+					<p>All Rights Reserved</p>
 				</div>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->

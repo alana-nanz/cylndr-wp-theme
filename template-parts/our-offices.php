@@ -1,3 +1,4 @@
 <div>
-	<img class="new-office-img-map" src="http://cylndr-dev.local/wp-content/uploads/2024/07/map-module.png" />    
+	<img class="map-desktop" src="<?php echo get_theme_file_uri()?>/assets/img/map-module.png" />
+	<img class="map-mobile" src="<?php echo get_theme_file_uri()?>/assets/img/map-module-mobile.png" />    
 </div>

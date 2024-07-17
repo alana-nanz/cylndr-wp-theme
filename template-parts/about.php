@@ -1,4 +1,4 @@
-<div class="">
-	<img class="about-image" src="http://cylndr-dev.local/wp-content/uploads/2024/07/how-we-work-module.png" alt="about image">
+<div class="about-div">
+	<img class="about-image" src="<?php echo get_theme_file_uri()?>/assets/img/about-img.png" alt="about image">
 </div>
 

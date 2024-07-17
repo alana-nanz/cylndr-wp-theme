@@ -1319,7 +1319,8 @@ pre code {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+		width: 100%;
 }
 
 .no-gutters {
@@ -3772,10 +3773,10 @@ fieldset:disabled a.btn {
     text-decoration: none
 }
 
-.btn-link:hover {
+/* .btn-link:hover {
     color: #0056b3;
     text-decoration: underline
-}
+} */
 
 .btn-link.focus,
 .btn-link:focus {
@@ -6690,13 +6691,15 @@ a.close.disabled {
 
 .modal-title {
     margin-bottom: 0;
-    line-height: 1.5
+    line-height: 1.5;
+		margin: 40px 0 0 20px;
 }
 
 .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 1rem
+    padding: 1rem;
+		margin-left: 20px;
 }
 
 .modal-footer {
@@ -10822,7 +10825,7 @@ a:focus {
 
 @media(max-width:1024px) {
     .site-header {
-        height: 65px
+        height: 85px
     }
     .site-header .site-branding {
         top: 18px
@@ -10860,13 +10863,13 @@ a:focus {
 @media screen and (max-width:1024px) {
     .open-button {
         top: 15px;
-        right: 15px;
-        display: block
+        right: 5px;
+        display: block;
     }
 }
 
 .open-button.active .open-img {
-    transform: rotate(45deg)
+    transform: rotate(45deg);
 }
 
 .open-button.active .open-img svg * {
@@ -10878,8 +10881,8 @@ a:focus {
 }
 
 .open-button .open-img {
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     transition: all .2s;
     background-image: none !important;
@@ -11001,7 +11004,7 @@ a:focus {
     .main-navigation {
         width: 100%;
         height: 100vh;
-        background: #0e173e;
+        background: #015624;
         position: absolute;
         top: 0;
         left: -100%
@@ -11012,10 +11015,10 @@ a:focus {
         left: 0;
         display: block;
         top: 15%;
-        width: 185px
+        width: 250px
     }
     .main-navigation #menu-main-menu li a {
-        font-size: 35px
+        font-size: 50px
     }
     .main-navigation #menu-main-menu li a:active,
     .main-navigation #menu-main-menu li a:focus,
@@ -11418,8 +11421,17 @@ a.btn-email {
 
 #about {
     padding: 0;
-    background: #e5e4d8;
+    background: #0E0D1D;
 		margin: 0;
+}
+
+.about-div {
+	display: flex;
+	justify-content: center;
+}
+
+.links-to-tabs {
+	margin-bottom: 0;
 }
 
 #about .links-to-tabs li {
@@ -13195,7 +13207,7 @@ video {
 
 @media screen and (max-width:480px) {
     #clients {
-        padding-bottom: 0
+        padding: 0 10px
     }
 }
 
@@ -13536,14 +13548,15 @@ a:focus {
 }
 
 #contact .contact-desktop {
-    margin: 10px;
-    background-color: #e6e4d9
+    background-color: #015624;
+		padding: 15px;
+		min-height: 330px;
 }
 
 @media screen and (max-width:1024px) {
     #contact {
-        height: calc(100vh - 65px) !important;
-        top: 65px
+        height: calc(100vh - 85px) !important;
+        top: 85px
     }
 }
 
@@ -13589,23 +13602,24 @@ a:focus {
     #contact .close-contact {
         position: absolute;
         top: 15px;
-        right: 15px;
+        right: 5px;
         z-index: 999;
-        width: 35px;
-        height: 35px;
+        width: 60px;
+        height: 60px;
         z-index: 999;
-        position: fixed
+        position: fixed;
+				transform: rotate(-45deg);
     }
     #contact .close-contact:after {
         display: block;
         content: '';
-        height: 37px;
-        width: 37px;
+        height: 60px;
+        width: 60px;
         position: absolute;
-        top: -1px;
-        right: -1px;
+        top: 0px;
+        right: 0px;
         z-index: 1;
-        background-color: #0e173e;
+        background-color: #0E0D1D;
         border-radius: 44px
     }
     #contact .close-contact img {
@@ -13636,17 +13650,17 @@ a:focus {
 }
 
 #contact .office-wrap {
-    background-color: #e6e4d9;
+    background-color: #015624;
     display: none;
     transition: width 1s;
-    height: 100%;
+    /* height: 100%; */
     width: 100%
 }
 
 @media screen and (max-width:1024px) {
     #contact .office-wrap {
-        background: #e17829 !important;
-        display: block !important
+        background: #FFF6eC !important;
+        display: block !important;
     }
 }
 
@@ -13668,9 +13682,10 @@ a:focus {
 
 #contact .office-hours {
     font-family: Value !important;
-    background: #0000d7;
+		border: 1px solid #FFF6eC;
+		border-radius: 10px;
     margin: 3px;
-    color: #fff;
+    color: #FFF6eC;
     padding: 10px 20px 3px 20px;
     display: table;
     width: 98%
@@ -13695,8 +13710,8 @@ a:focus {
 }
 
 @media screen and (max-width:1024px) {
-    #contact .office-hours:hover {
-        background: #0000d7 !important
+    #contact .office-hours {
+        background: #015624 !important
     }
 }
 
@@ -13704,14 +13719,17 @@ a:focus {
     text-transform: uppercase;
     font-weight: 400;
     line-height: .2;
-    margin-top: 15px
+    margin-top: 15px;
+		margin-bottom: 10px;
+		font-family: "Dharma-gothic-e", serif;
 }
 
 #contact .office-hours .time {
     font-size: 55px;
     font-weight: 500;
     font-style: normal;
-    line-height: initial
+    line-height: initial;
+		font-family: 'Instrument serif', serif;
 }
 
 @media screen and (max-width:2560px) and (min-height:1440px) {
@@ -13727,7 +13745,7 @@ a:focus {
 }
 
 #contact .mt6 {
-    margin-top: 6px
+    /* margin-top: 6px */
 }
 
 #contact .mb6 {
@@ -13744,11 +13762,24 @@ a:focus {
 }
 
 .office-details {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    color: #0e173e;
-    font-weight: 500
+    color: #FFF6eC;
+    font-weight: 500;
+		font-family: "Dharma-gothic-e", serif;
+}
+
+#contact .col-md-7 {
+	padding: 35px;
+}
+
+.office-details h3 {
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	font-family: "Dharma-gothic-e", serif;
+}
+
+.office-details p {
+	font-family: 'Instrument Sans';
+	font-size: 14px !important;
 }
 
 @media screen and (max-width:1024px) {
@@ -13756,19 +13787,13 @@ a:focus {
         position: static;
         left: 0;
         bottom: 0;
-        color: #fff
+        color: black;
     }
-}
-
-.office-details h3 {
-    font-family: "Compass Sans Bold";
-    font-size: 40px
 }
 
 @media screen and (max-width:1024px) {
     .office-details h3 {
         font-size: 30px;
-        font-family: Value;
         font-weight: 500
     }
 }
@@ -13777,35 +13802,46 @@ a:focus {
     font-weight: 400
 }
 
-.office-details .map-link {
-    color: #0e173e;
+.map-link {
+    color: #FFF6eC !important;
     text-transform: uppercase;
     font-size: 18px;
-    transition: all .2s
+    transition: all .2s;
+		font-family: 'Instrument serif', serif;
+		border: 1px solid #FFF6ec;
+		border-radius: 100px;
+		padding: 5px 20px;
 }
 
 @media screen and (max-width:1024px) {
     .office-details .map-link {
-        color: #fff
+        color: black !important;
+				border-color: black;
+				display: none;
     }
 }
 
-.office-details .map-link:hover {
-    color: #e17829
+@media screen and (max-width:1024px) {
+    .office-details p {
+        margin-bottom: 0 !important;
+    }
+}
+
+.map-link:hover {
+    color: #e17829;
+		border-color: #e17829;
 }
 
 .office-details-contact {
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
-    font-size: 20px
+    font-size: 20px;
+		margin-bottom: 16px;
 }
 
 @media screen and (max-width:1024px) {
     .office-details-contact {
         position: static;
         left: 0;
-        bottom: 0
+        bottom: 0;
     }
 }
 
@@ -13813,7 +13849,9 @@ a:focus {
 .office-details-contact .phone-number {
     -webkit-text-stroke: 1.2px rgba(14, 23, 62, 0);
     transition: all .2s;
-    letter-spacing: 0
+    letter-spacing: 0;
+		font-family: 'Instrument Sans';
+		font-size: 14px;
 }
 
 .office-details-contact .email:hover,
@@ -13824,12 +13862,13 @@ a:focus {
 }
 
 .office-details-contact a {
-    color: #0e173e
+    color: #FFF6eC;
+		text-decoration: underline;
 }
 
 @media screen and (max-width:1024px) {
     .office-details-contact a {
-        color: #fff
+        color: black;
     }
 }
 
@@ -13841,12 +13880,30 @@ a:focus {
 .office-social-media {
     position: absolute;
     right: 40px;
-    bottom: 30px
+    top: 30%;
 }
 
 @media screen and (max-width:1024px) {
     .office-social-media {
-        display: none
+        top: 40%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .office-social-media ul li:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .office-social-media ul li:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .office-social-media ul li:nth-child(4) {
+        display: none;
     }
 }
 
@@ -13860,26 +13917,33 @@ a:focus {
 }
 
 .office-social-media ul li a {
-    color: #0e173e;
+    color: #FFF6eC;
     font-weight: 400;
     font-size: 22px;
     position: relative;
     -webkit-text-stroke: 1.2px rgba(14, 23, 62, 0);
     transition: all .2s;
-    letter-spacing: 0
+    letter-spacing: 0;
+		font-family: 'Instrument serif', serif;
+}
+
+@media screen and (max-width:1024px) {
+    .office-social-media ul li a {
+        color: black;
+    }
 }
 
 .office-social-media ul li a:hover {
-    -webkit-text-stroke: 1.2px #0e173e;
     letter-spacing: .5px;
-    text-decoration: none
+    text-decoration: none;
+		color: #e17829;
 }
 
 .office-social-media ul li a:hover:before {
     opacity: 1
 }
 
-.office-social-media ul li a:before {
+/* .office-social-media ul li a:before {
     content: "Coming soon";
     position: absolute;
     left: -130px;
@@ -13891,7 +13955,7 @@ a:focus {
     letter-spacing: 0 !important;
     opacity: 0;
     transition: all .2s
-}
+} */
 
 .office-details-open {
     position: absolute;
@@ -13907,7 +13971,7 @@ a:focus {
 }
 
 .office-details-open .close-contact:hover {
-    transform: scale(1.1);
+		transform: rotate(45deg);
     transition: all .2s ease-in-out
 }
 
@@ -13947,7 +14011,9 @@ a:focus {
 @media screen and (max-width:1024px) {
     .contact-mobile {
         display: block;
-        position: relative
+        position: relative;
+				height: 100%;
+				background: #0E0D1D;
     }
     .contact-mobile button:active,
     .contact-mobile button:focus,
@@ -13977,7 +14043,7 @@ a:focus {
 }
 
 .contact-mobile .card-body {
-    background: #e17829 !important;
+    background: #FFF6eC !important;
     position: relative
 }
 
@@ -14014,9 +14080,6 @@ a:focus {
 
 #our-services-inner {
     position: relative;
-		background: url(http://cylndr-dev.local/wp-content/uploads/2024/07/services-header.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
  		height:60vh;  
 }
 
@@ -14082,12 +14145,17 @@ a:focus {
 }
 
 #our-offices {
-    background-color: #e5e4d8;
+    background-color: #0E0D1D;
     display: table;
     width: 100%;
     position: relative;
     padding: 0;
 		margin: 0;
+}
+
+#our-offices div {
+	display: flex;
+	justify-content: center;
 }
 
 @media screen and (max-width:1024px) {
@@ -14501,7 +14569,7 @@ video#map {
 }
 
 #what-we-do .what-we-do-inner-bottom {
-    color: #fff;
+    color: #FFF6EC;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -14516,7 +14584,7 @@ video#map {
 }
 
 #what-we-do .what-we-do-inner-bottom ul li a {
-    color: #fff;
+    color: #FFF6EC;
     font-size: 48px;
     transition: all .2s;
     -webkit-text-stroke: 0;
@@ -14566,15 +14634,8 @@ video#map {
 }
 
 #what-we-do .tab-inner-left {
-		background: url(http://cylndr-dev.local/wp-content/uploads/2024/07/services-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-		padding: 60px;
 		width: 50%;
-}
-
-#what-we-do .tab-inner-right {
-		padding: 60px;
+		max-width: 800px;
 }
 
 #what-we-do .tab-inner-left ul li {
@@ -14584,8 +14645,8 @@ video#map {
 #what-we-do .tab-inner-left ul li a {
     display: table-cell;
     vertical-align: middle;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 		font-size: 45px;
 		letter-spacing: 0px;
 		font-family: "Dharma-gothic-e", serif;
@@ -14667,6 +14728,7 @@ video#map {
 #what-we-do .what-we-do-desktop {
     background-color: #0E0D1D;
     display: block;
+		padding: 100px 5vw;
 }
 
 @media screen and (max-width:1024px) {
@@ -14678,6 +14740,7 @@ video#map {
 #what-we-do .what-we-do-mobile {
     display: none;
 		background-color: #0E0D1D;
+		padding: 60px 5vw;
 }
 
 #what-we-do .what-we-do-mobile .what-we-do-inner-top {
@@ -14796,10 +14859,6 @@ video#map {
 
 .what-we-do-mobile .what-we-do-inner-bottom-mobile {
     padding-top: 40px;
-    padding-bottom: 40px;
-		background: url(http://cylndr-dev.local/wp-content/uploads/2024/07/services-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .what-we-do-mobile .modal-dialog {
@@ -14813,8 +14872,7 @@ video#map {
     border: none;
     border-radius: 0;
     font-size: 35px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     text-align: left;
     font-family: "Dharma-gothic-e", serif;
 }
@@ -14839,7 +14897,7 @@ video#map {
     background: #0E0D1D;
     border-color: #0E0D1D;
     color: #fff;
-    height: 100vh
+    height: 100vh;
 }
 
 .what-we-do-mobile .modal-content .modal-title {
@@ -14855,7 +14913,8 @@ video#map {
 .what-we-do-mobile .modal-header .close {
     color: #fff;
     opacity: 1;
-    font-weight: 300
+    font-weight: 300;
+		font-size: 3rem;
 }
 
 @media screen and (max-width:414px) {
@@ -14875,7 +14934,7 @@ video#map {
 
 .what-we-do-mobile .modal {
     top: initial !important;
-    left: initial !important;
+    left: 0 !important;
     bottom: 0 !important;
     right: initial !important
 }
@@ -14929,7 +14988,7 @@ video#map {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-    color: #09163e;
+    color: #000;
     cursor: pointer
 }
 
@@ -14946,21 +15005,19 @@ video#map {
 .col-xs-12 p {
 	font-size: 12px;
 	text-align: left;
+	margin-bottom: 0;
 }
 
 .logos {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	margin: 20px 0;
-	gap: 30px;
+	flex-direction: column;
+	align-items: flex-end;
+	color: #000;
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:992px) {
   .logos {
-		flex-wrap: wrap;
-		justify-content: flex-start;
+		display: block;
 	}
 }
 
@@ -14987,11 +15044,16 @@ video#map {
 }
 
 #colophon.site-footer .container {
-    max-width: 90vw !important
+	max-width: 90vw;
+	padding: 0;
 }
 
-
-
+#colophon.site-footer .container p {
+	font-size: 12px;
+	text-align: left;
+	margin-bottom: 0;
+	color: #000;
+}
 
 body {
   background: #0E0D1D;
@@ -15004,4 +15066,88 @@ p {
 #masthead {
 	background: rgb(14,13,29);
 	background: linear-gradient(180deg, rgba(14,13,29,1) 0%, rgba(14,13,29,0) 100%);
+}
+
+@media(max-width:1024px) {
+	#masthead {
+		background: rgb(14,13,29);
+	}
+}
+
+.site-title {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media screen and (max-width:992px) {
+    .map-desktop {
+      display: none;
+    }
+}
+
+.map-mobile {
+	display: none;
+}
+
+@media screen and (max-width:992px) {
+    .map-mobile {
+      display: block;
+    }
+}
+
+@media screen and (max-height: 525px) {
+	.mobile-copyright {
+		display: none;
+	}
+}
+
+.what-we-do-top {
+	padding-bottom: 50px;
+	color: #FFF6EC;
+}
+
+.what-we-do-top h2 {
+	font-family: "Dharma-gothic-e", serif;
+	font-size: 60px;
+}
+
+.what-we-do-top .sub-head {
+	font-family: 'Instrument Serif';
+	font-size: 25px;
+	max-width: 600px;
+}
+
+@media screen and (max-width:1024px) {
+	.what-we-do-top {
+		padding-bottom: 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.global-family-footer {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Instrument Sans';
+	margin-bottom: 80px;
+}
+
+@media screen and (max-width:992px) {
+	.global-family-footer {
+		display: block;
+	}
+
+	.family { margin-top: 20px;}
+}
+
+.family .title {
+	font-weight: bold;
+	margin-bottom: 15px;
 }
