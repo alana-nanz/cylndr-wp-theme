@@ -20,10 +20,6 @@ get_header();
         <?php get_template_part('template-parts/hero'); ?>
     </section>
 
-    <section id="projects" class="projects">
-        <?php get_template_part('template-parts/projects'); ?>
-    </section>
-
     <section id="about" class="who-we-are about">
         <?php get_template_part('template-parts/about'); ?>
     </section>
