@@ -10873,7 +10873,7 @@ a:focus {
 }
 
 .open-button.active .open-img svg * {
-    fill: #e1771c !important
+    fill: #FF3800 !important
 }
 
 .open-button:hover .open-img svg {
@@ -11130,7 +11130,8 @@ video[poster] {
 
 @media screen and (max-width:480px) {
     .video-mobile {
-        display: block
+        display: block;
+				margin-top: 85px;
     }
 }
 
@@ -11420,14 +11421,36 @@ a.btn-email {
 }
 
 #about {
-    padding: 0;
-    background: #0E0D1D;
-		margin: 0;
+	padding: 0;
+	background: #0E0D1D;
+	margin: 0;
+	scroll-margin-top: 60px;
+	scroll-snap-margin-top: 60px;
 }
 
 .about-div {
 	display: flex;
 	justify-content: center;
+}
+
+.about-image-mobile {
+	display: none;
+}
+
+.about-image-desktop {
+	width: 100% !important;
+}
+
+@media screen and (max-width:576px) {
+	.about-image-mobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width:576px) {
+	.about-image-desktop {
+		display: none;
+	}
 }
 
 .links-to-tabs {
@@ -11793,7 +11816,7 @@ a.btn-email {
 }
 
 #about .hover-effect.orange:hover {
-    color: #e17829;
+    color: #FF3800;
     transition: .35s ease-in-out
 }
 
@@ -12162,7 +12185,7 @@ a.btn-email {
 }
 
 .projects .open-button.active .open-img svg * {
-    fill: #e1771c !important
+    fill: #FF3800 !important
 }
 
 .projects .open-button:hover .open-img svg {
@@ -13039,7 +13062,7 @@ a.btn-email {
 }
 
 .projects .client-details-color {
-    color: #e17829;
+    color: #FF3800;
     text-transform: uppercase
 }
 
@@ -13665,7 +13688,7 @@ a:focus {
 }
 
 #contact .office-wrap #contact .office-wrap {
-    background: #e17829 !important
+    background: #FF3800 !important
 }
 
 #contact .office-wrap.mobile {
@@ -13705,7 +13728,7 @@ a:focus {
 }
 
 #contact .office-hours:hover {
-    background: #cb6a18;
+    background: #FF3800;
     text-decoration: none
 }
 
@@ -13828,8 +13851,8 @@ a:focus {
 }
 
 .map-link:hover {
-    color: #e17829;
-		border-color: #e17829;
+    color: #FF3800;
+		border-color: #FF3800;
 }
 
 .office-details-contact {
@@ -13856,8 +13879,8 @@ a:focus {
 
 .office-details-contact .email:hover,
 .office-details-contact .phone-number:hover {
-    -webkit-text-stroke: 1.2px #e17829;
-    color: #e17829;
+    -webkit-text-stroke: 1.2px #FF3800;
+    color: #FF3800;
     letter-spacing: .5px
 }
 
@@ -13936,7 +13959,7 @@ a:focus {
 .office-social-media ul li a:hover {
     letter-spacing: .5px;
     text-decoration: none;
-		color: #e17829;
+		color: #FF3800;
 }
 
 .office-social-media ul li a:hover:before {
@@ -13948,7 +13971,7 @@ a:focus {
     position: absolute;
     left: -130px;
     top: -1px;
-    color: #e17829;
+    color: #FF3800;
     font-size: 20px;
     font-weight: 400;
     -webkit-text-stroke: 0 rgba(14, 23, 62, 0) !important;
@@ -14504,7 +14527,9 @@ video#map {
 #what-we-do {
     position: relative;
     padding: 0;
-    background-color: #e5e4d8
+    background-color: #e5e4d8;
+		scroll-margin-top: 60px;
+  	scroll-snap-margin-top: 60px;
 }
 
 #what-we-do .back-to-top {
@@ -14518,7 +14543,7 @@ video#map {
 }
 
 #what-we-do .back-to-top a:hover {
-    color: #e17829;
+    color: #FF3800;
     font-weight: 700;
     text-decoration: none
 }
@@ -14554,7 +14579,7 @@ video#map {
 }
 
 #what-we-do .what-we-do-inner-top {
-    background: #e1771c;
+    background: #FF3800;
     text-align: center;
     color: #fff;
     padding-top: 60px;
@@ -14728,7 +14753,7 @@ video#map {
 #what-we-do .what-we-do-desktop {
     background-color: #0E0D1D;
     display: block;
-		padding: 100px 5vw;
+		padding: 120px 5vw 100px;
 }
 
 @media screen and (max-width:1024px) {
@@ -14774,7 +14799,7 @@ video#map {
 }
 
 #what-we-do button[aria-expanded=true] {
-    color: #e17829 !important
+    color: #FF3800 !important
 }
 
 #what-we-do button:hover,
@@ -14802,7 +14827,7 @@ video#map {
 }
 
 #what-we-do .card-body {
-    background: #e17829
+    background: #FF3800
 }
 
 @media screen and (max-width:1024px) {
@@ -14816,7 +14841,7 @@ video#map {
     #what-we-do .card-body a,
     #what-we-do .card-body li,
     #what-we-do .card-body ul {
-        color: #e17829;
+        color: #FF3800;
         list-style: none;
         margin-left: 0;
         padding-left: 0
@@ -14844,7 +14869,7 @@ video#map {
 #what-we-do .card-body a,
 #what-we-do .card-body li,
 #what-we-do .card-body ul {
-    color: #e17829;
+    color: #FF3800;
     list-style: none;
     margin-left: 0;
     padding-left: 0
@@ -14925,7 +14950,7 @@ video#map {
 
 .what-we-do-mobile .modal-body li,
 .what-we-do-mobile .modal-body ul {
-    color: #e17829
+    color: #FF3800
 }
 
 .what-we-do-mobile .modal-footer {
@@ -14948,7 +14973,7 @@ video#map {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 20px;
-    color: #000
+    color: #0E0D1D;
 }
 
 .site-footer .logo {
@@ -15052,7 +15077,7 @@ video#map {
 	font-size: 12px;
 	text-align: left;
 	margin-bottom: 0;
-	color: #000;
+	color: #0E0D1D;
 }
 
 body {
