@@ -2,7 +2,7 @@
        
   <div class="what-we-do-top">
 		<h2>OUR <span>SERVICES</span></h2>
-		<div class="sub-head">Not all brands and businesses are built the same. We thrive on offering bespoke services that fit the needs of each client.</div>
+		<!-- <div class="sub-head">Not all brands and businesses are built the same. We thrive on offering bespoke services that fit the needs of each client.</div> -->
 	</div>
 
   <div class="what-we-do-inner-bottom-mobile">

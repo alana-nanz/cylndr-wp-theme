@@ -269,16 +269,13 @@ var $window = $(window);
 var nav = $('.site-header');
 
 $window.on('scroll', function(){
-  var scrollTop = $window.scrollTop();
+	var scrollTop = $window.scrollTop();
   nav.toggleClass('hidden', scrollTop > prev);
-  prev = scrollTop;
+	// prev = scrollTop;
   setTimeout(function(){
-      navbarActiveElement();
+		navbarActiveElement();
   }, 100);
-
-
 });
-
 
 function navbarActiveElement() {
     // console.log('navbarActiveElement');
@@ -308,5 +305,4 @@ function sliderElementWidth() {
     jQuery('.swiper-container-clients .swiper-slide').css('width', elementWidth);
     console.log('slider element width: ' + elementWidth);
 }
-
 

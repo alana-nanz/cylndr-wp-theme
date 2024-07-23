@@ -15176,3 +15176,20 @@ p {
 	font-weight: bold;
 	margin-bottom: 15px;
 }
+
+
+.sound-btn {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	height: 30px;
+	width: 30px;
+	border: none;
+	padding: 0;
+	background: none;
+}
+
+.sound-btn:hover,
+.sound-btn:focus {
+	outline: none;
+}
